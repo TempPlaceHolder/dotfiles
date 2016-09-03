@@ -1,0 +1,11 @@
+[user]
+name = Alexandros Kotzias
+email = alexandroskotzias@gmail.com 
+
+[alias]
+ca = commit --amend
+fa = fetch --all
+ls = log --show-signature
+lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset by %C(yellow)%ae%Creset' --abbrev-commit --date=relative
+lgg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset by %C(yellow)%ae%Creset' --abbrev-commit --date=relative
+

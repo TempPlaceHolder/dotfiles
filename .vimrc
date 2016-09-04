@@ -25,6 +25,11 @@ let mapleader=","
 nnoremap <Leader>w <C-w>w
 " space moves half page
 noremap <Space> <c-d>
+" space-leader clear search
+nnoremap <leader><space> :noh<cr>
+" tab matches brackets
+nnoremap <tab> %
+vnoremap <tab> %
 " empty line normal mode
 map <Enter> o<ESC>
 " quick normal mode
@@ -60,7 +65,10 @@ set cursorline
 " highlight matching [{()}]
 set showmatch
 
+" when query includes uppercase chars, case sensitive
 set ignorecase
+set smartcase
+
 set hlsearch
 set wrap
 set spelllang=en

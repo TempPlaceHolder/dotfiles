@@ -5,6 +5,7 @@ if [ $(uname) != 'Linux' ]; then
   alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
   alias editAliases='sudo vim ~/.bash_profile'
   alias de='eval "$(docker-machine env default)"'
+  alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim'
 fi
 
 # Get directory md5

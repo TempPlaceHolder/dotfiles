@@ -69,6 +69,9 @@ set cursorline
 " highlight matching [{()}]
 set showmatch
 
+" clipboard
+set clipboard=unnamed
+
 " when query includes uppercase chars, case sensitive
 set ignorecase
 set smartcase
@@ -79,3 +82,4 @@ set spelllang=en
 
 "close vim if only NERDTree open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+

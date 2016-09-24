@@ -1,4 +1,6 @@
 alias editAliases='vim ~/.bash_aliases'
+alias ll='ls -lh'
+alias la='ls -lah'
 # OSX
 if [ $(uname) != 'Linux' ]; then
   alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'

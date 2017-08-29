@@ -1,6 +1,8 @@
 alias editAliases='vim ~/.bash_aliases'
 alias ll='ls -lh'
 alias la='ls -lah'
+alias dirSizes='du -hs * | sort -hr'
+
 # OSX
 if [ $(uname) != 'Linux' ]; then
   alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
@@ -8,9 +10,8 @@ if [ $(uname) != 'Linux' ]; then
   alias editAliases='sudo vim ~/.bash_profile'
   alias de='eval "$(docker-machine env default)"'
   alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim'
+  alias dirSizes='du -hs * | sort -nr'
 fi
-
-alias dirSizes='du -hs * | sort -hr'
 
 # Get directory md5
 md5dir() {

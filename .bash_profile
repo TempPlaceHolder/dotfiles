@@ -10,6 +10,8 @@ if [ $(uname) != 'Linux' ]; then
   alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim'
 fi
 
+alias dirSizes='du -hs * | sort -hr'
+
 # Get directory md5
 md5dir() {
     find "$1" -type f -print0 | sort -z | xargs -r0 md5sum | md5sum

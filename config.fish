@@ -16,8 +16,8 @@ alias ..... 'cd ../../../..'
 alias i "apt-get install"
 alias s "apt-cache search"
 alias h "history | grep"
-alias aria "aria2c -x16 --http-user=transmission --http-passwd=roufatokavli"
-alias dcup "docker-compose -f ~/repos/wfp/infrastructure/docker/docker-compose-local-was-dev.yml up"
-alias dcdown "docker-compose -f ~/repos/wfp/infrastructure/docker/docker-compose-local-was-dev.yml down"
+alias aria "aria2c -x16 --http-user=transmission --http-passwd=updatethis"
+alias dcup "docker-compose -f ~/repos/wfp/infrastructure/docker/local-environment/docker-compose.yml up"
+alias dcdown "docker-compose -f ~/repos/wfp/infrastructure/docker/local-environment/docker-compose.yml down"
 alias wfpgradle "cd ~/repos/wfp and ./gradlew clean ear --rerun-tasks"
 

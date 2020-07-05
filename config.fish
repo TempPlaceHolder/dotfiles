@@ -12,7 +12,9 @@ alias .... 'cd ../../..'
 alias ..... 'cd ../../../..'
 
 # Quick apt-get install/search
+alias gitfixup "git commit -a --amend --no-edit"
 alias i "apt-get install"
 alias s "apt-cache search"
 alias h "history | grep"
 
+alias sf "source ~/.config/fish/config.fish"

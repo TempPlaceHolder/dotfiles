@@ -8,8 +8,6 @@ if [ $(uname) != 'Linux' ]; then
   alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
   alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
   alias editAliases='sudo vim ~/.bash_profile'
-  alias de='eval "$(docker-machine env default)"'
-  alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim'
   alias dirSizes='du -hs * | sort -nr'
 fi
 

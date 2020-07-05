@@ -1,25 +1,5 @@
 " be iMproved, required
 set nocompatible
-" required for Vundle
-filetype off
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree'
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'tpope/vim-fugitive'
-Plugin 'wincent/command-t'
-
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-colorscheme desert
 
 " 0 to first non-blank character of line
 map 0 ^
@@ -38,9 +18,6 @@ vnoremap <tab> %
 map <Enter> o<ESC>
 " quick normal mode
 imap ii <Esc>      
-
-" open NERDTree
-map <Leader>e :NERDTreeToggle<cr>
 
 " enable syntax processing
 syntax on
@@ -79,7 +56,3 @@ set smartcase
 set hlsearch
 set wrap
 set spelllang=en
-
-"close vim if only NERDTree open
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-

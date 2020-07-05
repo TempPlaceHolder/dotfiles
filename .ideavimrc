@@ -1,0 +1,3 @@
+" quick normal mode
+imap ii <Esc>   
+set surround
